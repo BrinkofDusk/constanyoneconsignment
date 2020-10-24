@@ -55,6 +55,7 @@ html, body{
 body{
 width:94%;
 
+
 display: flex;
 flex-direction: column;
 
@@ -65,7 +66,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 65vh;
+    height: 35vh;
     background-image: url(logo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -77,6 +78,15 @@ header{
     
 }
 
+#aboutBG{
+    background-image: url(aboutBG.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+}
+
 .navContainer{
     position: fixed;
     display: flex;
@@ -85,12 +95,45 @@ header{
     width:6%;
     height: 100vh;
     font-size: large;
-    line-height: 50px;
+    line-height: 75px;
     background-color: rgba(0, 0, 255, 0.589);
 }
 
+.navContainer nav a span{
+    display: none;
+}
+
+.navContainer:hover {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+
+.navContainer:hover nav a img{
+    width:65px;
+    height: auto;
+    
+}
+
+
+.navContainer:hover nav a span{
+    display: inline;
+    font-size: 1.5rem;
+    color:white;
+ 
+}
+
+.link{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .mainContent{
-    width: fit-content;
+    width:100%;
     margin-left:5.3%;
     display: flex;
     justify-content: end;
@@ -99,8 +142,12 @@ header{
 }
 
 
- nav a{
-    text-decoration: none;
+ nav a img{
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-top:10%;
+    width: 60%;
 }
 
 .mainContent h1{
@@ -116,6 +163,7 @@ header{
 h2{
     font-size: 2rem;
     position: relative;
+    margin-top: 3%;
     top:90%;
     left:10%;
     font-family:'Indie Flower', cursive;
@@ -127,14 +175,38 @@ h2{
     margin-bottom:10%;
 }
 
+
+
 .wordBG{
+    display: flex;
+    justify-content: center ;
     background-color: rgba(28, 28, 160, 0.76);
-    width:35%;
-    border-radius: 5px;;
+    width:50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    margin-left: 28%;
+    
+}
+#sec1Heading{
+    text-shadow: 3px;
+    
 }
 
+.sec{
+    display: flex;
+    justify-content: center;
+    
+    margin-left: 30%;
+    margin-bottom: 10%;
+    width: 40%;
+    height: auto;
+}
 
-
+.sec p{
+    font-size: 1.5rem;
+    
+}
 
 
 footer{
