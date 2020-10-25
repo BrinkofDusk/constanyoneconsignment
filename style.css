@@ -59,8 +59,10 @@ width:94%;
 display: flex;
 flex-direction: column;
 
-
 }
+
+
+
 
 header{
     display: flex;
@@ -87,16 +89,31 @@ header{
     height: 45vh;
 }
 
+/* #productHdr{
+    background-image:url(open.png);
+    width: 100%;
+    height: 45vh;
+    padding: 0;
+    border: none;
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-bottom: 5%;
+   
+} */
+
 .navContainer{
     position: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:6%;
+    width:4%;
     height: 100vh;
     font-size: large;
     line-height: 75px;
-    background-color: rgba(0, 0, 255, 0.589);
+    background-color: rgb(0, 0, 255);
 }
 
 .navContainer nav a span{
@@ -104,9 +121,10 @@ header{
 }
 
 .navContainer:hover {
-    width:25%;
+    width:15%;
     display: flex;
     flex-direction: column;
+    
     flex-wrap: wrap;
     z-index: 3;
     background-color: rgb(0, 0, 255);
@@ -114,6 +132,8 @@ header{
     
 
 }
+
+
 
 .navContainer .link:hover{
     background-color: rgb(2, 2, 78);
@@ -162,7 +182,7 @@ header{
     border-radius: 15px;
     margin-left: 20%;
     margin-top:10%;
-    width: 60%;
+    width: 80%;
 }
 
 .mainContent h1{
@@ -200,7 +220,7 @@ h2{
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 5px;
-    margin-left: 28%;
+    
     
 }
 #sec1Heading{
@@ -211,26 +231,163 @@ h2{
 .sec{
     display: flex;
     justify-content: center;
-    
-    margin-left: 30%;
+   
+    margin-left: 17%;
     margin-bottom: 10%;
-    width: 40%;
+    width: 70%;
     height: auto;
 }
 
 .sec p{
     font-size: 1.5rem;
     
+
 }
 
 
 footer{
   
-    display: flex;
-    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     width: 100%;
     height: 30vh;
     background-color: rgba(29, 29, 112, 0.822);
     margin-left:6.3%;
 }
 
+
+
+.storeNav{
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    position: absolute;
+    top:0;
+    height: 5vh;
+    width:93%;
+    left:6%;
+    background-color: rgb(51, 51, 247);
+    padding: 5px;
+    padding-top:px;
+}
+
+.storeNav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    
+    font-size: 1rem;
+}
+
+.storeNav input{
+ position: absolute;
+ right: 1%;
+ top:5px;
+ height: 25px;
+   
+     
+    
+    
+    
+}
+
+ul{
+    list-style-type: disc;
+    font-size:1.75rem
+}
+
+
+@media only screen and (min-width:1080px){
+    .navContainer:hover {
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+        z-index: 3;
+        background-color: rgb(0, 0, 255);
+        box-shadow:5px 0 0 rgba(88, 87, 87, 0.322);
+        
+    
+    }    
+
+    .navContainer:hover nav a img{
+        width: 15%;
+
+    }
+
+    .navContainer:hover nav a span{
+        display: inline;
+        font-size: 1.5rem;
+        color:white;
+}
+
+.mainContent{
+    width:100%;
+    /* margin-left:5.3%; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.mainContent p{
+
+    width: 50%;
+}
+.storeNav{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    height: 5vh;
+    width:97%;
+    left: 30px;
+    top:0;
+    background-color: rgb(51, 51, 247);
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.storeNav a{
+    cursor: pointer;
+}
+
+
+.storePage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: -2;
+}
+
+
+.featuredProduct{
+    width: 20%;
+    border: 1px solid black;
+
+}
+
+.featuredProduct .imgContainer img{
+    display: none;
+}
+
+footer{
+  
+    position: relative;
+    bottom: 0;
+    right: 2.1%;
+    
+    width: 102%;
+    height: 30vh;
+    background-color: rgba(29, 29, 112, 0.822);
+    margin-left:6.3%;
+}
+
+.contactPage{
+    
+}
+
+
+}
